@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%;
+    min-height: 100vh;
+    background-image: url("Red Love!.jpg");
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 140px;
+}
+
+.container{
+    border-radius: 30px;
+    padding: 20px;
+    align-self: center;
+    justify-self: center;
+    width: 400px;
+max-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    background-color: #FFCDB2;
+}
+
+#task{
+    border-radius: 10px;
+    height: 40px;
+    padding: 10px;
+}
+
+#add{
+    border-radius: 10px;
+    height: 40px;
+    background-color: #E0A4AF;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.input{
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #edeef0;
+    border-radius: 20px;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+}
+li{
+    cursor:pointer;
+    list-style: none;
+    padding: 10px 20px 10px 20px;
+    position: relative;
+    display: flex;
+    width: 400px;
+}
+
+ul li::before{
+    content: "\f111";
+    justify-content: flex-start;
+}
+
+
+ul li span{
+    position: absolute;
+    right: 10px;
+    top:-5px;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    color: grey;
+  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li span:hover{
+    background-color: rgb(74, 78, 78);
+    border-radius: 50%;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    content: "\f058";
+}
